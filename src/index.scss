@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: #FFFFFF;
+  --clr-black: #000000;
+  --clr-grey: #707070;
+  --clr-bunker: #131921;
+  --clr-ebony-clay: #232f3e;
+  --clr-orange: #FF9900;
+  --clr-orange-dark: #cc8111;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  max-width: 1200px;
+  margin: 20px auto 0;
+
+  font-size: 2.15em;
+}
+
+h2:not(.product__overview h2) {
+  padding-left: 20px;
+}
+
+/* ------------------------------------------------------ */

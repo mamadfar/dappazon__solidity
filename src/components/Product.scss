@@ -1,0 +1,152 @@
+.product {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  align-items: center;
+
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  background: var(--clr-white);
+}
+
+.product__image {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.product__image img {
+  max-width: 100%;
+}
+
+.product__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.product__close img {
+  width: 25px;
+  height: 25px;
+}
+
+.product__overview {
+  height: 90%;
+  padding: 20px 40px 20px 20px;
+}
+
+.product__overview h2,
+.product__overview hr,
+.product__overview .rating {
+  margin: 10px auto;
+}
+
+.product__overview ul {
+  margin-left: 40px;
+}
+
+.product__order {
+  max-width: 300px;
+  height: 90%;
+
+  border: 1px solid var(--clr-grey);
+  padding: 20px;
+}
+
+.product__order h1,
+.product__order p {
+  margin-bottom: 10px;
+}
+
+.product__buy {
+  width: 225px;
+  height: 40px;
+  margin: 20px 0;
+
+  background-color: var(--clr-orange);
+  color: var(--clr-black);
+
+  border: none;
+  border-radius: 24px;
+
+  font-family: "Open Sans";
+  font-size: 0.95em;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.product__buy:hover {
+  background-color: var(--clr-orange-dark);
+}
+
+.product__bought {
+  padding: 5px;
+  border: 1px solid var(--clr-grey);
+}
+
+@media screen and (max-width: 992px) {
+  .product__details {
+	height: 95%;
+	width: 90%;
+  }
+
+  .product__order {
+	max-width: 100%;
+	height: 100%;
+	margin-top: 20px;
+	grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+	grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav__links {
+	display: none;
+  }
+
+  .nav__search {
+	display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product__details {
+	height: 95%;
+	overflow-y: scroll;
+  }
+
+  .product__image {
+	grid-column: span 2;
+  }
+}

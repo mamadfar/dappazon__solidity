@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.58.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -26,7 +27,13 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": [
+        "tsconfig.json"
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -39,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "hardhat": "^2.12.6",
+    "ts-node": "^10.9.1"
   }
 }
