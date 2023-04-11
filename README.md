@@ -29,3 +29,9 @@ In a separate terminal execute:
 
 ### 6. Start frontend
 `$ npm run start`
+
+### 7. Recommendation
+It is better to open on your private browser (caching).
+
+## Preview
+![Dappazon](./src/assets/dappazon_preview.gif)
